@@ -1,0 +1,120 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Adicionado para um visual mais limpo */
+}
+
+/* Menu principal - Ajustado para a tag <nav> */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #eee;
+    padding: 15px 30px;
+}
+
+/* Logo - Ajustado para a classe .Logo (com L maiúsculo como no seu HTML) */
+.Logo {
+    color: #a8001c; /* Usei o tom de vermelho do alerta para consistência */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Lista de links */
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* Estilo dos Links do Menu */
+.menu-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    color: #a8001c;
+}
+
+/* Item ativo (pode adicionar a classe class="ativo" no HTML do Inicio) */
+.menu-links .ativo {
+    color: #a8001c;
+    font-weight: bold;       
+}
+
+/* --- FOOTER --- */
+
+/* Barra vermelha superior */
+.barra-alerta {
+    background-color: #a8001c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Container principal do footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhado ao topo para listas de links */
+    background-color: #cecece;
+    padding: 40px 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo h2 {
+    color: #a8001c;
+}
+
+/* Links do rodapé */
+.footer-link {
+    display: flex;
+    flex-direction: column; /* Links um embaixo do outro */
+    gap: 10px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.footer-link a:hover {
+    color: #a8001c;
+    text-decoration: underline;
+}
+
+/* Redes Sociais */
+.footer-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-redes a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+    /*Redes sociais*/
+    .footer-redes{
+        display: flex;
+        gap:15px;
+    }
+    .footer-redes a{
+        text-decoration: none;
+        color: #444;
+        font-size: 14px;
+    }
+    .footer-redes a:hover{
+        color: #a8001c;
+    }
