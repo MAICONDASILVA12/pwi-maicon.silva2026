@@ -4,7 +4,11 @@ programa
 	funcao inicio()
 	{
 		cadeia vSem[7]
-
+		inteiro i
+		
+          para i de 0 ate 6 faca
+		escolha i
+		
 		vSem[0] = "Domingo"
 		vSem[1] = "Segunda"
 		vSem[2] = "Terça"
@@ -12,6 +16,10 @@ programa
 		vSem[4] = "Quinta"
 		vSem[5] = "Sexta"
 		vSem[6] = "Sábado"
+
+		para i de 0 ate 6 faca
+		
+		escreva("vSem[" , i, "] = ", vSem[i], "\n")
 
 		escreva(vSem[6]) // Escreverá Sábado
 		
@@ -25,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 215; 
+ * @POSICAO-CURSOR = 97; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
