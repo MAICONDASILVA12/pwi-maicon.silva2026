@@ -1,55 +1,256 @@
-body{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-    background-color:#add8e5;
- }
- .menu{
-   display: flex;
-   justify-content: space-between; /* separa logo e menu*/ 
-   align-items: center;
-   background-color: #eee;
-   padding: 15px 30px;
- }
- .logo{
-   color: red;
-   font-size: 24px;
-   font-weight: bold;
- }
- .menu-link {
-   text-decoration: none;
-    display: flex;
-   gap: 25px;}
-   
-      .menu-link a{
-   text-decoration: none;
-   color: #555;
-     font-size: 16px;
-   transition: 0.3s;
-    display: flex;
-   gap: 25px;
-   }
-     
-   .menu-link a:hover{
-      color: red;
-   }
-   .menu-link .ativo{
-      color: red;
-      font-weight: bold;
-   
- }
- .menu-link a{
-   text-decoration: none;
- }
- body{
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Adicionado para um visual mais limpo */
+}
 
- }
- h1 { 
+/* Menu principal - Ajustado para a tag <nav> */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #eee;
+    padding: 15px 30px;
+}
+
+/* Logo - Ajustado para a classe .Logo (com L maiúsculo como no seu HTML) */
+.Logo {
+    color: #a8001c; /* Usei o tom de vermelho do alerta para consistência */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Lista de links */
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* Estilo dos Links do Menu */
+.menu-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    color: #a8001c;
+}
+
+/* Item ativo (pode adicionar a classe class="ativo" no HTML do Inicio) */
+.menu-links .ativo {
+    color: #a8001c;
+    font-weight: bold;       
+}
+.contato{
+    background-color: #ffffff;
+    color: #a8001c;
+    text-align: center;
+    padding: 40px 20px;
+}
+.contato h1{
+    font-size: 28px;
+    color: red;
+    margin-bottom: 20px;
+}
+.info-contato{
+    margin-bottom: 30px;
+}
+.info-contato p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+/* Mapa */
+.map iframe{
+    width: 80%; /* ocupar 80% da largura do site*/
+    height: 400px; /*altura do mapa*/
+    border: 0; /*remove borda*/  
+}
+/*Responsivo*/
+@media (max-width:600px){
+    .contato{
+        padding: 2px 10px; /*espaço em telas peqeunas*/
+            }
+            .contato h1{
+                font-size: 20px;
+                 }
+            .contato p{
+                font-size: 14px;
+                }
+                .mapa iframe{
+                    width: 100%;
+                    height: 300px;
+                }     
+}
+
+/* --- FOOTER --- */
+
+/* Barra vermelha superior */
+.barra-alerta {
+    background-color: #a8001c;
     color: white;
-    text-align: center; 
- }
-p{
-   font-family: Verdana;
-   font-size: 20px;
-   
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+/* Container principal do footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhado ao topo para listas de links */
+    background-color: #cecece;
+    padding: 40px 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo h2 {
+    color: #a8001c;
+}
+
+/* Links do rodapé */
+.footer-link {
+    display: flex;
+    flex-direction: column; /* Links um embaixo do outro */
+    gap: 10px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.footer-link a:hover {
+    color: #a8001c;
+    text-decoration: underline;
+}
+
+/* Redes Sociais */
+.footer-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-redes a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+    /*Redes sociais*/
+    .footer-redes{
+        display: flex;
+        gap:15px;
+    }
+    .footer-redes a{
+        text-decoration: none;
+        color: #444;
+        font-size: 14px;
+    }
+    .footer-redes a:hover{
+        color: #a8001c;
+    }
+    /* Configuração Geral */
+body {
+    background-color: #f4f1ea; /* Tom de papel antigo */
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container do Card */
+.card-frase {
+    background-color: white;
+    padding: 40px;
+    border-left: 15px solid #8b4513; /* Detalhe lateral em marrom */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Estilo da Frase */
+.frase {
+    font-size: 15px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+}
+/* Botão "Ver Cardápio" */
+.botao-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #a8001c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao-link:hover {
+    background-color: #7a0014;
+    transform: scale(1.05);
+}
+
+/* Estilo do Formulário Fale Conosco */
+.secao-formulario {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-top: 2px solid #eee;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #8b4513;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container input, 
+.form-container textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container button {
+    background-color: #a8001c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-container button:hover {
+    background-color: #7a0014;
+}
+
+/* Títulos das seções */
+.titulo-secao {
+    text-align: center;
+    color: #a8001c;
+    margin-top: 40px;
 }

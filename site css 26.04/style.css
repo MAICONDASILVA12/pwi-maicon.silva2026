@@ -46,7 +46,32 @@ nav {
     color: #a8001c;
     font-weight: bold;       
 }
+.contato{
+    background-color: #ffffff;
+    color: #a8001c;
+    text-align: center;
+    padding: 40px 20px;
+}
+.contato h1{
+    font-size: 28px;
+    color: red;
+    margin-bottom: 20px;
+}
+.info-contato{
+    margin-bottom: 30px;
+}
+.info-contato p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+/* Mapa */
+.map iframe{
+    width: 80%; /* ocupar 80% da largura do site*/
+    height: 400px; /*altura do mapa*/
+    border: 0; /*remove borda*/
+    
 
+}
 /* --- FOOTER --- */
 
 /* Barra vermelha superior */
