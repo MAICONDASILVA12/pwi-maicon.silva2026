@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family: sans-serif; /* Adicionado para um visual mais limpo */
 }
+/*Responsivo*/
+@media(max-width:600px){ 
+}
+.cardapio{  
+    padding: 2px 10px;          /* espaço em telas pequenas*/
+} 
 
 /* Menu principal - Ajustado para a tag <nav> */
 nav {
@@ -26,22 +32,102 @@ nav {
 .menu-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 25px; /*Espaço entre os itens*/
 }
 
 /* Estilo dos Links do Menu */
 .menu-links a {
     text-decoration: none;
-    color: #555;
+    color: #555; 
     font-size: 16px;
-    transition: 0.3s;
+    transition: 0.3s;              /*quando passa o mouse por cima, é o tempo que muda de cor*/
 }
 
-.menu-links a:hover {
+.menu-links a:hover {          /*quando passa o mouse por cima, muda a cor*/
     color: #a8001c;
 }
 
-/* Item ativo (pode adicionar a classe class="ativo" no HTML do Inicio) */
+/*rodapé*/
+/*Barra vermelha*/
+.barra-alerta{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+/*container do rodapé*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5f5;
+    padding: 30px;
+    flex-wrap: wrap;       /*item flexivel, fica em uma linha só*/
+}
+.footer-logo h2{ /*logo do rodapé*/
+    color: red;
+}
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-link{
+    text-decoration: none;
+    color: red;
+    font-size: 14px;
+    }
+    .footer-link a:hover{
+        color: yellow;
+        }
+/*Redes sociais*/
+.footer-redes{
+    display: flex;
+    gap: 15px;
+    }
+    .footer-redes a{
+        text-decoration: none;
+        color: red;
+        font-size: 14px;
+            }
+            .footer-link a:hover{
+                color: #444;
+            }        
+            .cardapio{
+                display: grid;
+                grid-template-columns: 1fr;
+        }
+        .bloco{
+            display: grid;
+            grid-template-columns: 1fr 1fr; /*divide em duas partes, texto + imagem*/
+            align-items: center;
+        }
+        .vermelho{
+            background-color: #7a0000;
+            color: white;
+        }
+        .bege{
+            background-color: #d8c0a3;
+        }
+            .texto{
+                padding: 40px;
+                 }
+                 .texto h2{
+                    font-size: 28px;
+                    margin-bottom: 15px;
+                 }
+        .texto p{
+            font-size: 14px;
+            line-height: 1.5;
+        }         
+        .imagem img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;        /*restaura a resolução da imagem*/              /* paramos aqui*/
+        }
+
+
 .menu-links .ativo {
     color: #a8001c;
     font-weight: bold;       
