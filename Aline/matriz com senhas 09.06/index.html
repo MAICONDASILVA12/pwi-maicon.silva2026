@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio do Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+
+    <div class="container" id="cardapio" style="display:none;">
+        <h1>Cardápio do dia</h1>
+        <button onclick="mostrarPratos()">Mostrar Cardápio</button>
+        <button onclick="logout()">Deslogar</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function login() {
+            if (
+                document.getElementById("usuario").value === "admin" &&
+                document.getElementById("senha").value === "123"
+            ) {
+                document.getElementById("cardapio").style.display = "block";
+            } else {
+                logout();
+                alert("Usuário ou senha incorretos!");
+            }
+        }
+
+        function logout() {
+            document.getElementById("cardapio").style.display = "none";
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
