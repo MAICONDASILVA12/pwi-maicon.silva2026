@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio do Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Cardápio do Dia</h1>
+
+    <input type="number" id="numeroPrato" placeholder="Número do prato">
+
+    <input type="number" id="numeroBebida" placeholder="Número da bebida">
+
+    <br><br>
+
+    <button onclick="mostrarPratos()">Cardápio</button>
+
+    <button onclick="mostrarBebidas()">Bebidas</button>
+
+    <button onclick="pesquisarPrato()">Pesquisar Prato</button>
+
+    <button onclick="pesquisarBebida()">Pesquisar Bebida</button>
+
+    <button onclick="pratoAleatorio()">Prato Aleatório</button>
+
+    <button onclick="bebidaAleatoria()">Bebida Aleatória</button>
+
+    <div id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
