@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXERCICIO NUMEROS INTEIROS PHP</title>
+    <title>Números inteiros</title>
 </head>
 <body>
-    <?php
-    $n = 11;
-
-    $m = 12;
-
-    echo "<br>";
-    echo $n;
-    echo "<br>";
-    echo $m;
-    echo "<br>";
-    echo 50;
-    echo "<br>";
-    echo 500;
-
-
-    ?>
     
+<?php
+echo 22;
+echo "<br>";
+echo 11;
+echo "<br>";
+echo 58;
+echo "<br>";
+echo 5;
+echo "<br>";
+echo 1058;
+echo "<br>";
+
+?>
 </body>
 </html>

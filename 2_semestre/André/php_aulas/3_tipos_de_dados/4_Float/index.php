@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1</title>
+    <title>Checando números Float</title>
 </head>
 <body>
-    <?php
-   echo "Olá Meu nome é Gabriel";
-   echo "<br>";
-   echo "teste de pular Linha";
-    ?>
+<?php
+
+echo 5.5;
+echo "<br>"; // Imprime a quebra de linha corretamente
+
+echo 6.2;
+echo "<br>";
+
+echo 7.1;
+echo "<br>";
+
+?>
 </body>
 </html>

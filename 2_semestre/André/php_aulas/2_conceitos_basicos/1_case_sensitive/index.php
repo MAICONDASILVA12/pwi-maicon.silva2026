@@ -6,26 +6,30 @@
     <title>Case Sensitive em PHP</title>
 </head>
 <body>
-    <?php
-    //Não é case sensitive
-    echo "teste <br>";
+    <?php 
+    //Não é case sensitive 
+    echo "Teste <br>";
     Echo "Testando 2 <br>";
-    ECHO "testando 3 <br>";
-
-    // É Case Sensitive
-    $none = "Maicon";
-    $NOME = "TESTE";
-
+    ECHO "Testando 3 <br>";
+    
+    // É case sensitive
+    $nome = "Gabriel";
+    $NOME = "Henrique";
+    echo "<meu nome é : >";
     echo $nome;
     echo "<br>";
+    echo "<Meu sobrenome é: >";
+    echo $NOME;
+    echo "<br>";    
+
+    /*Case sensitive
+    - Significa sensibilidade a casas maiúsculas e minúsculas;
+    - Para instruções PHP não temos essa diferença, ou seja: echo = ECHO;
+    - Porém para variáveis são case sensitive;
+    - Ou seja, $nome != $NOME;
+    - Obs: Veremos variáveis em detalhes mais adiante; */
+    
     ?>
-    /*Case sensitivity
-    Significa sensibilidades a casas maiúsculas e minúsculas;
-    Para instruções PHP não temos essa diferença, ou seja: echo = ECHO;
-    Porém para variáveis são case senstive;
-    Ou seja, $nome != $NOME;
-    OBS: Veremos variáveis em detalhes mais adiante;
-    */
 
 </body>
 </html>
