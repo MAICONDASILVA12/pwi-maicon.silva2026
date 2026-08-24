@@ -13,14 +13,13 @@
     ECHO "Testando 3 <br>";
     
     // É case sensitive
-    $nome = "Gabriel";
-    $NOME = "Henrique";
-    echo "<meu nome é : >";
+    $nome = "Bianca Santos";
+    $NOME = "TESTE";
+
     echo $nome;
     echo "<br>";
-    echo "<Meu sobrenome é: >";
     echo $NOME;
-    echo "<br>";    
+    echo "<br>";
 
     /*Case sensitive
     - Significa sensibilidade a casas maiúsculas e minúsculas;

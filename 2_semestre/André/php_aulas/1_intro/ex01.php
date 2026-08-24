@@ -7,9 +7,7 @@
 </head>
 <body>
     <?php
-   echo "Olá Meu nome é Gabriel";
-   echo "<br>";
-   echo "teste de pular Linha";
+    echo "Meu nome é Bianca";
     ?>
 </body>
 </html>

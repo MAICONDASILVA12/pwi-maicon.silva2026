@@ -2,20 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checando Booleanos</title>
+    <title>Booleanos em PHP</title>
 </head>
 <body>
-<?php 
-
-    $escolha = true;
-
-    if (is_bool($escolha)) {
-        echo "É um booleano!";
-    }
-    /*BOOLEANOS
-    o boolean é um tipo 
     
+<?php
+
+/*Booleanos
+O boolean é um tipo de dado que possui dois valores;
+TRUE = Verdadeiro
+False = Falso
+Alguns valores são considerados como falsos; 0,0.0 , 
+"0", [], NULL
+*/
+
+echo true;
+echo "<br>";
+echo false;
+
+if(true) {
+    echo "É verdadeiro! <br>";
+}
+
+if(5>2) { // true
+echo "É verdadeiro! <br>";
+}
+
+$podeEntrar = true;
+
+if($podeEntrar) {
+    echo "O usuário pode entrar";
+}
+
+
 ?>
+
+
 </body>
 </html>

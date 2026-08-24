@@ -20,9 +20,9 @@ Instruções de código:
 echo "Uma linha <br>";
 echo "Outra linha <br>";
 
-if(10>2){
-echo "10é maior que 2";
-} 
+if(5>2){
+echo "Dentro do if";
+}
 
 ?>
 
